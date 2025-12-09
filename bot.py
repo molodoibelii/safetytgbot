@@ -10,7 +10,7 @@ from telegram.ext import (
     filters,
     ContextTypes,
 )
-python -m pip list
+py -m pip list
 # Настройка логирования
 logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
@@ -210,4 +210,5 @@ if __name__ == '__main__':
     except KeyboardInterrupt:
         print("\n✅ Бот успешно остановлен!")
     except Exception as e:
+
         print(f"\n❌ Критическая ошибка: {e}")
